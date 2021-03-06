@@ -1,10 +1,17 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: "development",
     entry: './src/index.js',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    devServer: {
+      contentBase: path.join(__dirname, 'dist'),
+      compress: true,
+      port: 9000,
     },
     module: {
         rules: [
@@ -12,6 +19,20 @@ module.exports = {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
           },
+          {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: [
+              {
+                loader: 'file-loader',
+              },
+            ],
+          },
         ],
-      },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-}                                                                                                                                                                                                        
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'index.html',
+        template: 'src/assets/index.html' 
+      }),
+    ],                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
