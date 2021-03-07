@@ -1,7 +1,152 @@
-body {
-    background: red;
+@import '../fonts/stylesheet.css';
+@import './_variables.css';
+@import './_media.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-h1 {
-    background: green;
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 100vh;
+}
+
+.top-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.app-logo {
+    color: var(--c-orange-dark);
+    font-weight: 700;
+    font-size: 2rem;
+    margin: none;
+}
+
+.app-logo--blue {
+    color: var(--c-blue-dark);
+}
+
+
+.main-menu {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.main-menu__link {
+    color: var(--c-blue-dark);
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.main-menu__link:hover {
+    text-decoration: underline;
+}
+
+.try-for-free-button {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: var(--c-white);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: var(--c-blue-light);
+}
+
+.try-for-free-button:hover {
+    background: var(--c-blue-silver)
+}
+
+
+.header-article {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    background: url(../images/shapes-header.png);
+
+}
+
+.header-information {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+}
+
+.header-information__award {
+    display: flex;
+    align-items: center;
+    background: var(--c-gray);
+    border-radius: 30px;
+    max-width: 350px;
+}
+
+.header-information__award-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: var(--c-white);
+    background: var(--c-orange-light);
+    border-radius: 50%;
+}
+
+.header-information__award-text {
+    font-size: 1.2rem;
+    color: var(--c-blue-dark);
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.header-information__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--c-blue-dark);
+}
+
+.header-information__undertext {
+    font-size: 1.1rem;
+    color: var(--c-gray-dark);
+}
+
+.header-information__bottom-line {
+    display: flex;
+    align-items: center;
+}
+
+.header-information__video-link {
+    color: var(--c-blue-light);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 27px;
+}
+
+.header-article__app-example-image {
+    max-height: 600px;
+}
+
+.header-article__bottom-image {
+    background: url(../images/city-header.png);
 }
