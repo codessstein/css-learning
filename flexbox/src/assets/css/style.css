@@ -1,7 +1,7 @@
 @import '../fonts/stylesheet.css';
 @import './_variables.css';
 @import './_media.css';
-@import './_text-colors.css';
+@import './_components.css';
 
 * {
     box-sizing: border-box;
@@ -9,13 +9,8 @@
 }
 
 html, body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
-
-a {
-    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 header {
@@ -25,7 +20,7 @@ header {
     background: var(--c-gray-light);
 }
 
-.top-line {
+.header-top {
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,16 +28,16 @@ header {
 }
 
 .app-logo {
-    color: var(--c-orange-dark);
+    color: var(--color-orange-dark);
     font-weight: 700;
     font-size: 2rem;
     margin: none;
+    text-decoration: none;
 }
 
-.app-logo--blue {
-    color: var(--c-blue-dark);
+.app-logo span {
+    color: var(--color-blue-dark);
 }
-
 
 .main-menu {
     margin-left: auto;
@@ -50,35 +45,16 @@ header {
 }
 
 .main-menu__link {
-    color: var(--c-blue-dark);
+    color: var(--color-blue-dark);
     padding: 5px 15px;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .main-menu__link:hover {
     text-decoration: underline;
 }
-
-.try-for-free-button {
-    width: 170px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    color: var(--c-white);
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    background: var(--c-blue-light);
-}
-
-.try-for-free-button:hover {
-    background: var(--c-blue-silver)
-}
-
 
 .header-article {
     display: flex;
@@ -98,7 +74,7 @@ header {
 .header-information__award {
     display: flex;
     align-items: center;
-    background: var(--c-gray);
+    background: var(--color-gray-light-2);
     border-radius: 30px;
     max-width: 350px;
 }
@@ -110,8 +86,8 @@ header {
     width: 35px;
     height: 35px;
     font-size: 1.2rem;
-    color: var(--c-white);
-    background: var(--c-orange-light);
+    color: var(--color-white);
+    background: var(--color-orange-light-2);
     border-radius: 50%;
 }
 
@@ -123,26 +99,27 @@ header {
 }
 
 .header-information__title {
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: 700;
-    color: var(--c-blue-dark);
+    color: var(--color-blue-dark);
 }
 
-.header-information__undertext {
-    font-size: 1.1rem;
-    color: var(--c-gray-dark);
+.header-information__text {
+    font-size: 18px;
+    color: var(--color-gray-dark-2);
 }
 
-.header-information__bottom-line {
+.header-information__bottom-block {
     display: flex;
     align-items: center;
 }
 
 .header-information__video-link {
-    color: var(--c-blue-light);
+    color: var(--color-blue-light-3);
     font-size: 1.1rem;
     font-weight: 500;
     margin-left: 27px;
+    text-decoration: none;
 }
 
 .header-article__app-example-image {
@@ -157,7 +134,7 @@ header {
     bottom: 0;
 }
 
-.companies-like {
+.trusted-companies {
     height: 360px;
     display: flex;
     flex-direction: column;
@@ -166,13 +143,13 @@ header {
     padding: 100px 120px;
 }
 
-.companies-like__title {
-    color: var(--c-blue-dark);
+.trusted-companies__title {
+    color: var(--color-blue-dark);
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.companies-like__list {
+.trusted-companies__list {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -212,10 +189,7 @@ header {
 }
 
 .app-features__subtitle-text {
-    color: var(--c-gray-dark);
-    font-weight: 400;
     padding: 20px 0px;
-    font-size: 1.1rem;
 }
 
 .app-features__list {
@@ -230,16 +204,6 @@ header {
     align-items: center;
 }
 
-.icon-circle {
-    width: 89px;
-    height: 89px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--c-gray-silver);
-    border-radius: 50%;
-}
-
 .app-feature__item-information {
     display: flex;
     flex-direction: column;
@@ -250,11 +214,6 @@ header {
     padding-bottom: 20px;
     font-size: 1.3rem;
     font-weight: 700;
-}
-
-.app-features__item-text {
-    font-size: 1.1rem;
-    color: var(--c-gray-dark)
 }
 
 .jackpots {

@@ -1,53 +1,57 @@
 @import './_variables.css';
 
-.btn {
+.button {
     width: 170px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-    color: var(--c-white);
+    color: var(--color-white);
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    background: var(--c-blue-light);
+    background: var(--color-blue-light-3);
+    text-decoration: none;
+}
 
+.button:hover {
+    background: var(--color-blue-light-2)
 }
 
 .title {
     font-size: 36px;
     font-weight: 700;
-    color: var(--c-blue-dark);
+    color: var(--color-blue-dark);
 
 }
 
-.small-title {
+.subtitle {
     font-size: 20px;
+    font-weight: 700;
+    color: var(--color-blue-dark);
 }
 
-.small-title--color-pink {
-    color: var(--c-pink); 
+.subtitle--pink {
+    color: var(--color-pink-dark); 
 }
 
-.small-title--color-blue {
-    color: var(--c-blue);
+.subtitle--blue {
+    color: var(--color-blue-light-1);
 }
 
-.small-title--color-green {
-    color: var(--c-green);
+.subtitle--green {
+    color: var(--color-green);
 }
 
-.small-text {
+.text {
     font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-dark-2);
 }
 
-.small-text--color-gray {
-    color: var(--c-gray-dark);
-}
-
-.circle-icon {
+.icon {
     width: 89px;
     height: 89px;
     display: flex;
@@ -57,3 +61,26 @@
     border-radius: 50%;
 }
 
+.icon--pink {
+    background: var(--color-pink--light);
+}
+
+.icon--blue {
+    background: var(--color-blue-light-4);
+}
+
+.icon--orange {
+    background: var(--color-orange-light-1);
+}
+
+.icon--green {
+    background: var(--color-green-light-1);
+}
+
+.icon--blue-light {
+    background: var(--color-blue-light-5);
+}
+
+.icon--orange-light {
+    background: var(--color-orange-light-3);
+}
