@@ -14,18 +14,16 @@
 }
 
 /* Large */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 }
 
 /* X-Large */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
 }
 
 /* XX-Large */
 @media (min-width: 1400px) {
-    .header-article__app-example-image {
-        max-height: 700px;
-    }
+
 }

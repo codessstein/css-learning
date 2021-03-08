@@ -1,6 +1,7 @@
 @import '../fonts/stylesheet.css';
 @import './_variables.css';
 @import './_media.css';
+@import './_text-colors.css';
 
 * {
     box-sizing: border-box;
@@ -20,14 +21,15 @@ a {
 header {
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
     height: 100vh;
+    background: var(--c-gray-light);
 }
 
 .top-line {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 20px 40px;
 }
 
 .app-logo {
@@ -80,10 +82,10 @@ header {
 
 .header-article {
     display: flex;
-    padding: 50px 100px;
+    padding: 20px 120px 0px 120px;
     align-items: center;
     background: url(../images/shapes-header.png);
-
+    z-index: 999;
 }
 
 .header-information {
@@ -144,9 +146,211 @@ header {
 }
 
 .header-article__app-example-image {
-    max-height: 600px;
+    max-height: 530px;
 }
 
 .header-article__bottom-image {
     background: url(../images/city-header.png);
+    height: 245px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.companies-like {
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 120px;
+}
+
+.companies-like__title {
+    color: var(--c-blue-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.companies-like__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+.app-features__example {
+    display: flex;
+    width: 50%;
+    padding-right: 50px;
+    justify-content: flex-end;
+}
+
+.app-features__example-image {
+    max-height: 600px;
+}
+
+.app-features-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.app-features__title {
+    color: var(--c-blue-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.app-features__subtitle-text {
+    color: var(--c-gray-dark);
+    font-weight: 400;
+    padding: 20px 0px;
+    font-size: 1.1rem;
+}
+
+.app-features__list {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.app-features__item {
+    display: flex;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 89px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--c-gray-silver);
+    border-radius: 50%;
+}
+
+.app-feature__item-information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 33px;
+}
+
+.app-features__item-title {
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.app-features__item-text {
+    font-size: 1.1rem;
+    color: var(--c-gray-dark)
+}
+
+.jackpots {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.jackpots__title {
+    display: flex;
+    font-size: 3.5rem;
+    color: var(--c-blue-dark);
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.jackpots__text {
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--c-gray-dark);
+    flex-grow: 1;
+    flex-basis: 0;
+    font-weight: 500;
+}
+
+.vertical-line {
+    flex-grow: 0;
+    display: flex;
+    width: 2px;
+    height: 150px;
+    background: var(--c-gray-primery);
+}
+
+.vertical-line--with-margins {
+    margin: 0px 30px;
+}
+
+.benefits {
+    display: flex;
+    padding: 50px 120px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.benefits__item {
+    width: 250px;
+}
+
+.benefits__item-title {
+    padding: 47px 0px 15px 0px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.benefits__item-text {
+    font-size: 1.1rem;
+    color: var(--c-gray-dark)
+}
+
+.about-design {
+    display: flex;
+    padding: 50px 120px;
+    align-items: center;
+}
+
+.about-design__example {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.about-design__example-image {
+    max-height: 400px;
+}
+
+.about-design__information {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.about-design__title {
+    color: var(--c-blue-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about-design__text {
+    font-size: 1.1rem;
+    color: var(--c-gray-dark);
+    padding: 29px 0px 41px;
 }

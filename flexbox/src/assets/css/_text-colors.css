@@ -1,0 +1,11 @@
+.text-color--pink {
+    color: var(--c-pink); 
+}
+
+.text-color--blue {
+    color: var(--c-blue);
+}
+
+.text-color--green {
+    color: var(--c-green);
+}

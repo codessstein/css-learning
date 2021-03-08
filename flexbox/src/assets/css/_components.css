@@ -1,0 +1,59 @@
+@import './_variables.css';
+
+.btn {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: var(--c-white);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: var(--c-blue-light);
+
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--c-blue-dark);
+
+}
+
+.small-title {
+    font-size: 20px;
+}
+
+.small-title--color-pink {
+    color: var(--c-pink); 
+}
+
+.small-title--color-blue {
+    color: var(--c-blue);
+}
+
+.small-title--color-green {
+    color: var(--c-green);
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.small-text--color-gray {
+    color: var(--c-gray-dark);
+}
+
+.circle-icon {
+    width: 89px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--c-gray-silver);
+    border-radius: 50%;
+}
+
