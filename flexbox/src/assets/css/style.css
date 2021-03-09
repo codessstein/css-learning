@@ -16,8 +16,7 @@ html, body {
 header {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background: var(--c-gray-light);
+    background: url(../images/shapes-header.png);
 }
 
 .header-top {
@@ -60,7 +59,6 @@ header {
     display: flex;
     padding: 20px 120px 0px 120px;
     align-items: center;
-    background: url(../images/shapes-header.png);
     z-index: 999;
 }
 
@@ -69,6 +67,8 @@ header {
     flex-direction: column;
     height: 350px;
     justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .header-information__award {
@@ -92,8 +92,8 @@ header {
 }
 
 .header-information__award-text {
-    font-size: 1.2rem;
-    color: var(--c-blue-dark);
+    font-size: 18px;
+    color: var(--color-blue-dark);
     font-weight: 500;
     padding-left: 10px;
 }
@@ -106,6 +106,7 @@ header {
 
 .header-information__text {
     font-size: 18px;
+    padding: 25px 0px 25px 0px;
     color: var(--color-gray-dark-2);
 }
 
@@ -122,16 +123,20 @@ header {
     text-decoration: none;
 }
 
+.header-article__app-example {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 .header-article__app-example-image {
-    max-height: 530px;
+    max-height: 700px;
+    padding-left: 100px;
 }
 
 .header-article__bottom-image {
     background: url(../images/city-header.png);
     height: 245px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 .trusted-companies {
@@ -165,13 +170,18 @@ header {
 
 .app-features__example {
     display: flex;
-    width: 50%;
     padding-right: 50px;
     justify-content: flex-end;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .app-features__example-image {
-    max-height: 600px;
+    max-height: 700px;
+}
+
+.app-features__subtitle-text {
+    padding: 28px 0px 80px 0px;
 }
 
 .app-features-container {
@@ -180,22 +190,17 @@ header {
     padding: 20px 0px;
     justify-content: space-between;
     width: 50%;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
-.app-features__title {
-    color: var(--c-blue-dark);
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.app-features__subtitle-text {
-    padding: 20px 0px;
+.app-features__subtitle {
+    padding-bottom: 15px;
 }
 
 .app-features__list {
     display: flex;
     flex-direction: column;
-    width: 65%;
 }
 
 .app-features__item {
@@ -210,12 +215,6 @@ header {
     padding-left: 33px;
 }
 
-.app-features__item-title {
-    padding-bottom: 20px;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
 .jackpots {
     display: flex;
     flex-direction: row;
@@ -226,31 +225,19 @@ header {
 
 .jackpots__title {
     display: flex;
-    font-size: 3.5rem;
-    color: var(--c-blue-dark);
+    font-size: 40px;
+    color: var(--color-blue-dark);
     flex-grow: 1;
     flex-basis: 0;
 }
 
 .jackpots__text {
-    display: flex;
-    font-size: 1.2rem;
-    color: var(--c-gray-dark);
     flex-grow: 1;
     flex-basis: 0;
-    font-weight: 500;
 }
 
-.vertical-line {
-    flex-grow: 0;
-    display: flex;
-    width: 2px;
-    height: 150px;
-    background: var(--c-gray-primery);
-}
-
-.vertical-line--with-margins {
-    margin: 0px 30px;
+.jackpots__line {
+    margin: 0px 77px;
 }
 
 .benefits {
@@ -265,18 +252,10 @@ header {
 }
 
 .benefits__item {
-    width: 250px;
+    padding: 0px 60px;
 }
-
-.benefits__item-title {
-    padding: 47px 0px 15px 0px;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.benefits__item-text {
-    font-size: 1.1rem;
-    color: var(--c-gray-dark)
+.benefits__subtitle {
+    padding-top: 35px;
 }
 
 .about-design {
@@ -302,14 +281,6 @@ header {
     flex-basis: 0;
 }
 
-.about-design__title {
-    color: var(--c-blue-dark);
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
 .about-design__text {
-    font-size: 1.1rem;
-    color: var(--c-gray-dark);
     padding: 29px 0px 41px;
 }

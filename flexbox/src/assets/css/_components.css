@@ -84,3 +84,11 @@
 .icon--orange-light {
     background: var(--color-orange-light-3);
 }
+
+.vertical-line {
+    flex-grow: 0;
+    display: flex;
+    width: 2px;
+    height: 150px;
+    background: var(--color-gray-light-4);
+}
