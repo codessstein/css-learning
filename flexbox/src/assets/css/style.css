@@ -1,6 +1,5 @@
 @import '../fonts/stylesheet.css';
 @import './_variables.css';
-@import './_media.css';
 @import './_components.css';
 
 * {
@@ -47,7 +46,6 @@ header {
     margin-right: 20px;
 }
 
-
 .main-menu__link {
     color: var(--color-blue-dark);
     padding: 5px 15px;
@@ -66,7 +64,8 @@ header {
 
 .header-article {
     display: flex;
-    padding: 20px 120px 0px 120px;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px;
     align-items: center;
     z-index: 999;
 }
@@ -75,9 +74,9 @@ header {
     display: flex;
     flex-direction: column;
     height: 350px;
+    margin: 100px 0px;
     justify-content: space-between;
     flex-grow: 1;
-    flex-basis: 0;
 }
 
 .header-information__award {
@@ -133,13 +132,15 @@ header {
 }
 
 .header-article__app-example {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
-    flex-basis: 0;
 }
 
 .header-article__app-example-image {
     max-height: 700px;
-    padding-left: 100px;
+    padding-left: 0px;
 }
 
 .header-article__bottom-image {
@@ -154,7 +155,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 120px;
+    padding: 100px 0px;
 }
 
 .trusted-companies__title {
@@ -165,12 +166,22 @@ header {
 
 .trusted-companies__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+}
+
+.trusted-companies__item {
+    width: 200px;
+    height: 100px;
+    padding: 50px;
 }
 
 .app-features {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -492,4 +503,131 @@ footer {
 
 .footer__main-menu {
     margin-top: 52px;
+}
+
+.mobile-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: block;
+    font-size: 2em;
+    z-index: 1000;
+    color: var(--color-blue-light-1);
+}
+
+.mobile-button:hover {
+    color: var(--color-blue-light-2);
+}
+
+.mobile-menu {
+    display: none;
+    background: var(--color-blue-dark);
+    justify-content: center;
+    align-items: center;
+    opacity: .99;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.mobile-main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu__link--mobile {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+
+.mobile-menu--active {
+    display: flex;
+}
+
+
+
+/* 	Extra small */
+@media (max-width: 576px) {
+    .main-menu__header {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+}
+
+/* Small */
+@media (min-width: 576px) {
+    .main-menu__header {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .header-article__app-example {
+        padding-left: 100px;
+        margin-top: 0px;
+    } 
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-button {
+        display: none;
+    }
+
+    .main-menu__header {
+        display: flex;
+    }
+
+    .header__button {
+        display: flex;
+    } 
+
+    .trusted-companies {
+        padding: 0px 120px;
+    }
+
+    .header-article {
+        padding: 20px 120px 20px 120px;
+    }
+
+    .header-article__app-example {
+        padding-left: 100px;
+        margin-top: 0px;
+    } 
+
+    .header-information {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .header-article__app-example {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  
+}
+
+/* XX-Large */
+@media (min-width: 1400px) {    
+   
 }
