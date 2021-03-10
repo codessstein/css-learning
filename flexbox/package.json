@@ -1,0 +1,25 @@
+{
+  "name": "flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "private": "true",
+  "scripts": {
+    "start:dev": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.1.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.1",
+    "html-webpack-plugin": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
