@@ -10,8 +10,8 @@
     color: var(--color-white);
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 16px;
     background: var(--color-blue-light-3);
     text-decoration: none;
 }
@@ -92,3 +92,8 @@
     height: 150px;
     background: var(--color-gray-light-4);
 }
+
+.advantages__button {
+    margin-top: 41px;
+}
+
