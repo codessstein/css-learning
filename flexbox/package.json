@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "private": "true",
   "scripts": {
+    "build": "webpack --mode=production",
     "start:dev": "webpack serve"
   },
   "keywords": [],

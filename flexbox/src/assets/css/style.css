@@ -1,6 +1,5 @@
 @import '../fonts/stylesheet.css';
 @import './_variables.css';
-@import './_components.css';
 
 * {
     box-sizing: border-box;
@@ -17,6 +16,111 @@ header {
     display: flex;
     flex-direction: column;
     background: url(../images/shapes-header.png);
+}
+
+footer {
+    background: var(--color-blue-dark-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 116px 0px 100px;
+}
+
+.button {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    background: var(--color-blue-light-3);
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--color-blue-light-2)
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-blue-dark);
+
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-blue-dark);
+}
+
+.subtitle--pink {
+    color: var(--color-pink-dark); 
+}
+
+.subtitle--blue {
+    color: var(--color-blue-light-1);
+}
+
+.subtitle--green {
+    color: var(--color-green);
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-dark-2);
+}
+
+.icon {
+    width: 89px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--c-gray-silver);
+    border-radius: 50%;
+}
+
+.icon--pink {
+    background: var(--color-pink--light);
+}
+
+.icon--blue {
+    background: var(--color-blue-light-4);
+}
+
+.icon--orange {
+    background: var(--color-orange-light-1);
+}
+
+.icon--green {
+    background: var(--color-green-light-1);
+}
+
+.icon--blue-light {
+    background: var(--color-blue-light-5);
+}
+
+.icon--orange-light {
+    background: var(--color-orange-light-3);
+}
+
+.vertical-line {
+    flex-grow: 0;
+    display: flex;
+    width: 2px;
+    height: 150px;
+    background: var(--color-gray-light-4);
+}
+
+.advantages__button {
+    margin-top: 41px;
 }
 
 .header-top {
@@ -479,13 +583,7 @@ header {
     cursor: pointer;
 }
 
-footer {
-    background: var(--color-blue-dark-2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 116px 0px 100px;
-}
+
 
 .social__list {
     display: flex;
@@ -649,9 +747,11 @@ footer {
     .jackpots__line {
         display: block;
     }
+
     .app-features__example {
         display: flex;
     } 
+
     .mobile-menu {
         display: none;
     }
