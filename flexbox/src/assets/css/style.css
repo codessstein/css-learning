@@ -10,6 +10,7 @@
 html, body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    width: 100%;
 }
 
 header {
@@ -150,12 +151,11 @@ header {
 }
 
 .trusted-companies {
-    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 0px;
+    padding: 100px 0px 0px;
 }
 
 .trusted-companies__title {
@@ -167,7 +167,7 @@ header {
 .trusted-companies__list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding: 40px 40px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -176,6 +176,7 @@ header {
 .trusted-companies__item {
     width: 200px;
     height: 100px;
+    margin-bottom: 10px;
     padding: 50px;
 }
 
@@ -185,11 +186,11 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 120px;
+    padding: 20px 40px;
 }
 
 .app-features__example {
-    display: flex;
+    display: none;
     padding-right: 50px;
     justify-content: flex-end;
     flex-grow: 1;
@@ -205,11 +206,11 @@ header {
 }
 
 .app-features-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     padding: 20px 0px;
     justify-content: space-between;
-    width: 50%;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -238,9 +239,10 @@ header {
 .jackpots {
     display: flex;
     flex-direction: row;
-    padding: 50px 120px;
+    padding: 50px 40px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .jackpots__title {
@@ -248,31 +250,35 @@ header {
     font-size: 40px;
     color: var(--color-blue-dark);
     flex-grow: 1;
-    flex-basis: 0;
 }
 
 .jackpots__text {
     flex-grow: 1;
-    flex-basis: 0;
+    margin-top: 20px;
 }
 
 .jackpots__line {
+    display: none;
     margin: 0px 77px;
 }
 
 .benefits {
     display: flex;
-    padding: 50px 120px;
+    padding: 50px 40px;
 }
 
 .benefits__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .benefits__item {
-    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0px;
 }
 .benefits__subtitle {
     padding: 35px 0px 20px;
@@ -280,25 +286,26 @@ header {
 
 .about-design {
     display: flex;
-    padding: 50px 120px;
+    padding: 50px 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-design__example {
     display: flex;
+    justify-content: center;
     flex-grow: 1;
-    flex-basis: 0;
 }
 
 .about-design__example-image {
-    max-height: 400px;
+    max-height: 300px;
 }
 
 .about-design__information {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 0;
+    margin-top: 40px;
 }
 
 .about-design__text {
@@ -309,7 +316,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 120px;
+    padding: 50px 40px;
 }
 
 .advantages__text {
@@ -320,7 +327,7 @@ header {
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .advantages__item {
@@ -340,7 +347,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 50px 120px;
+    padding: 50px 40px;
 }
 
 .plans__text {
@@ -376,6 +383,7 @@ header {
 .plans-switch {
     display: flex;
     margin-top: 42px;
+    flex-direction: column;
 }
 
 .plans__price {
@@ -392,7 +400,7 @@ header {
     cursor: pointer;
     width: 318px;
     border-radius: 10px;
-    margin: 0px 19px;
+    margin: 20px 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,7 +450,7 @@ header {
 .download {
     display: flex;
     align-items: center;
-    padding: 50px 120px;
+    padding: 50px 40px;
 }
 
 .download__information {
@@ -453,6 +461,7 @@ header {
 }
 
 .download__image {
+    display: none;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -503,6 +512,8 @@ footer {
 
 .footer__main-menu {
     margin-top: 52px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-button {
@@ -559,6 +570,14 @@ footer {
     .header__button {
         display: none;
     }
+
+    .about-design__example-image {
+        max-height: 250px;
+    }
+
+    header {
+        background: none;
+    }
 }
 
 /* Small */
@@ -574,6 +593,10 @@ footer {
 
 /* Medium */
 @media (min-width: 768px) {
+    .plans-switch {
+        flex-direction: row;
+    }
+
     .header-article__app-example {
         padding-left: 100px;
         margin-top: 0px;
@@ -582,6 +605,53 @@ footer {
 
 /* Large */
 @media (min-width: 992px) {
+    .plans {
+        padding: 50px 120px;
+    }
+    
+    .advantages__list {
+        justify-content: space-between;
+    }
+
+    .benefits {
+        padding: 50px 120px;
+    }
+
+    .benefits__list {
+        justify-content: space-between;
+    }
+
+    .benefits__item {
+        width: 300px;
+
+    }
+    
+    .app-features {
+        padding: 20px 120px;
+    }
+
+    .jackpots {
+        padding: 50px 120px;
+
+    }
+
+    .jackpots__title {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .jackpots__text {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-top: 0px;
+    }
+
+    .jackpots__line {
+        display: block;
+    }
+    .app-features__example {
+        display: flex;
+    } 
     .mobile-menu {
         display: none;
     }
@@ -599,7 +669,8 @@ footer {
     } 
 
     .trusted-companies {
-        padding: 0px 120px;
+        padding: 114px 10px;
+        margin-bottom: 20px;
     }
 
     .header-article {
@@ -620,6 +691,43 @@ footer {
         flex-grow: 1;
         flex-basis: 0;
     }
+
+    
+    .about-design {
+        padding: 50px 120px;
+    }
+    
+    .about-design__example {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .about-design__information {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .about-design__example-image {
+        max-height: 400px;
+        padding-right: 30px;
+    } 
+
+    .download {
+        padding: 50px 120px;
+    } 
+
+    .footer__main-menu {
+        flex-direction: row;
+    }
+
+    .download__image {
+        display: flex;
+    }
+
+    .advantages {
+        padding: 50px 120px;
+    }
+    
 }
 
 /* X-Large */
